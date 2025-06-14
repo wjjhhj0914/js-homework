@@ -9,3 +9,9 @@
  * - 반환값 타입 : Number
  * - 비고 : 함수 표현식으로 작성
  */
+
+const calculateOriginalPrice = function (priceWithTax) {
+  return priceWithTax / (1 + 0.033);
+}
+
+console.log(calculateOriginalPrice(20_000));
