@@ -8,3 +8,10 @@
  * - 반환값 타입 : String
  * - 비고 : 함수 선언으로 작성
  */
+
+function greetUser(username) {
+  return `안녕하세요! ${username}님. 좋은 하루되세요!`;
+}
+
+console.log(greetUser('장효정'));
+console.log(greetUser('Charlie'));
