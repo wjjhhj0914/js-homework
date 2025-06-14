@@ -14,3 +14,27 @@
  * - 속성 : 나이(age)
  * - 속성 : 성별(gender)
  */
+
+// 신분증 객체
+const registrationCard = {
+  name: '짐 캐리',
+  age: 18,
+  gender: 'male',
+}
+
+// 화살표 함수
+const canSellAlcohol = registrationCard => registrationCard.age >= 19;
+
+// 반환값 Boolean 타입
+console.log(canSellAlcohol(registrationCard));
+
+// 추가로 작성해본 함수
+const calcAge = function (registrationCard) {
+  if (canSellAlcohol(registrationCard)) {
+    console.log(`${registrationCard.name}님은 주류 구매가 가능합니다! 🍻`);
+  } else {
+    console.log(`${registrationCard.name}님은 주류를 구매할 수 없습니다.. 😢`);
+  }
+}
+
+calcAge(registrationCard);
