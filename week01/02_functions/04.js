@@ -8,3 +8,10 @@
  * - 기능 : 판매가에서 할인율을 적용한 할인가를 반환
  * - 반환값 타입 : Number
  */
+
+const getDiscountedPrice = function (originalPrice, discountPercent) {
+  let discountRate = (100 - discountPercent) * 0.01;
+  return originalPrice * discountRate;
+}
+
+console.log(`계산된 할인가는 ${getDiscountedPrice(18700, 20)}원입니다.`);
