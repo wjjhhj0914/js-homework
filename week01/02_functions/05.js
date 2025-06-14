@@ -12,3 +12,30 @@
  * - 함수가 반환해야 할 결과 값은 아래 포멧(format)입니다.
  * { score: 87, grade: 'B', description: '우수' }
  */
+
+const returnObj = function (userScore) {
+  const scoreObj = {
+    score: userScore,
+    grade: '',
+    description: '',
+  }
+  if (userScore >= 90) {
+    scoreObj.grade = 'A';
+    scoreObj.description = '매우 우수 🏆';
+  } else if (userScore >= 80) {
+    scoreObj.grade = 'B';
+    scoreObj.description = '우수 👍';
+  } else if (userScore >= 70) {
+    scoreObj.grade = 'C';
+    scoreObj.description = '보통 🙂';
+  } else if (userScore >= 60) {
+    scoreObj.grade = 'D';
+    scoreObj.description = '미달, 통과 기준 근접 😢';
+  } else {
+    scoreObj.grade = 'F';
+    scoreObj.description = '낙제 🤯';
+  }
+  return scoreObj;
+}
+
+console.log(returnObj(59));
