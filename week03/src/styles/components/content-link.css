@@ -38,11 +38,11 @@ body {
     }
 
     .card__image--background {
-      top: 8px;
+      top: 12px;
     }
 
     .card__image--character {
-      top: -4px;
+      position: relative;
     }
   }
 
