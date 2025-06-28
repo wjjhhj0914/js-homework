@@ -1,0 +1,40 @@
+body {
+  margin: 50px;
+}
+
+/* 타이틀 링크 컴포넌트 */
+.carousel__header {
+  display: inline-flex;
+  flex-direction: row-reverse; /* 아이콘 | 텍스트 | 화살표 이런 순서로 오도록 설정 */
+  justify-content: start;
+  align-items: flex-end;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: var(--background-muted);
+  }
+  
+  &:focus-visible {
+    outline: 1px solid var(--colour-focus-ring);
+  }
+  
+  .carousel__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--colour-black-soft);
+  }
+
+  img {
+    width: 24px;
+  }
+
+  svg {
+    order: -1; /* 화살표는 시각적으로 가장 오른쪽에 위치 */
+    display: block;
+    margin: auto 0;
+    width: 7px;
+    height: 12px;
+  }
+}
