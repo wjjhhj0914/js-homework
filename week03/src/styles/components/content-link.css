@@ -1,0 +1,68 @@
+body {
+  margin: 50px;
+}
+
+/* 콘텐츠 링크 컴포넌트 */
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 160px;
+  height: 240px;
+  gap: 8px;
+
+  &:hover figcaption {
+    opacity: 64%;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--colour-focus-ring);
+  }
+
+  .card__link {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+  }
+
+  .card__image--wrapper {
+    --image-height: 172px;
+
+    position: relative;
+    height: var(--image-height);
+
+    img {
+      position: absolute;
+      width: 160px;
+      border-radius: 8px;
+    }
+
+    .card__image--background {
+      top: 8px;
+    }
+
+    .card__image--character {
+      top: -4px;
+    }
+  }
+
+  figcaption {
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-block-end: 2px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 350;
+      margin-block-end: 8px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 350;
+      color: var(--colour-grey-48);
+    }
+  }
+}
