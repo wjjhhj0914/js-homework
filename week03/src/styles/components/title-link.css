@@ -2,11 +2,12 @@
 .carousel__header {
   display: inline-flex;
   flex-direction: row-reverse; /* 아이콘 | 텍스트 | 화살표 이런 순서로 오도록 설정 */
-  justify-content: start;
+  justify-content: center;
   align-items: flex-end;
   gap: 6px;
   padding: 5px 10px;
   border-radius: 100px;
+  width: 136px;
 
   &:hover {
     background-color: var(--background-muted);

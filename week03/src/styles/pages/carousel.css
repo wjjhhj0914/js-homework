@@ -1,0 +1,51 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.carousel {
+  width: 384px;
+  height: 372px;
+  background-color: var(--background-default);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  overflow: hidden;
+
+  .carousel__header {
+    margin-left: 10px;
+    margin-block: 14px;
+  }
+
+  .carousel__viewport {
+    /* 카드 2장 + gap */
+    width: calc(160px * 2 + 16px);
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .card__container {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+
+    .card {
+      flex: 0 0 160px;
+    }
+  }
+  
+  .carousel__controls {
+    display: flex;
+    justify-content: center;
+    margin-block: 11px;
+
+    .carousel__pagination {
+      margin: auto 12px;
+      color: var(--colour-grey-64);
+
+      .carousel__pagination-current {
+        color: var(--colour-grey-100);
+      }
+    }
+  }
+
+}

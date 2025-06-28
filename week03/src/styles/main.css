@@ -6,3 +6,6 @@
 @import './components/nav-button.css';
 @import './components/title-link.css';
 @import './components/content-link.css';
+
+/* Page Styles */
+@import './pages/carousel.css';
