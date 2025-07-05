@@ -3,12 +3,246 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-/* container */
+/* variables */
+:root {
+  --black: rgba(29, 19, 22, 1);
+  --red: rgba(179, 17, 22, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+/* layout */
 .container {
-  /* display: flex;
-  gap: 36px; */
+  margin-inline: 88px;
+}
+
+.section-wrapper {
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
 }
 
 /* text area */
+.text-area__wrapper {
+  padding: 128px 0 289px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-topic {
+  color: var(--red);
+  align-self: flex-start;
+  margin-block-end: 88px;
+}
+
+.main-text {
+  font-weight: 100;
+  font-size: 86px;
+  line-height: 120%;
+  color: var(--red);
+  margin-block-end: 64px;
+}
+
+.main-text span:nth-child(2) {
+  display: block;
+  font-weight: 700;
+}
+
+.sub-text {
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-block-end: 84px;
+}
+
+.sub-text span {
+  display: block;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cta-buttons a {
+  color: var(--red);
+  font-weight: 500;
+  font-size: 24px;
+  padding: 12px 36px;
+}
+
+.cta-buttons a:nth-child(1) {
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 100px;
+}
+
+/* visual area */
+.visual-area__wrapper {
+  margin-block: 64px;
+  position: relative;
+}
+
+.visual-area {
+  position: relative;
+  inline-size: 846px;
+  block-size: 993px;
+}
+
+/* grid lines */
+.grid-lines {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+}
+
+.line-horizontal:nth-child(1) {
+  width: 805px;
+  top: 191px;
+  left: 41px;
+}
+
+.line-horizontal:nth-child(2) {
+  width: 737px;
+  top: 441px;
+  left: 31px;
+}
+
+.line-horizontal:nth-child(3) {
+  width: 773px;
+  top: 690px;
+}
+
+.line-vertical:nth-child(4) {
+  height: 992px;
+  left: 191px;
+  top: 0.5px;
+}
+
+.line-vertical:nth-child(5) {
+  height: 791px;
+  top: 122px;
+  left: 440px;
+}
+
+.line-vertical:nth-child(6) {
+  height: 819px;
+  top: 29px;
+  left: 690px;
+}
+
+/* svg shapes */
+.pattern {
+  position: absolute;
+  z-index: -2;
+}
+
+.pattern-1 {
+    width: 124px;
+    aspect-ratio: 1;
+    top: 65px;
+    left: 565px;
+}
+
+.pattern-2 {
+    width: 250px;
+    height: 125px;
+    top: 190px;
+    left: 190px;
+}
+
+.pattern-3 {
+  width: 125px;
+  height: 125px;
+  top: 190px;
+  left: 440px;
+}
+
+.pattern-4 {
+  width: 124px;
+  aspect-ratio: 1;
+  top: 190px;
+  left: 565px;
+}
+
+.pattern-5 {
+  width: 124px;
+  aspect-ratio: 1;
+  top: 315px;
+  left: 191px;
+}
+
+.pattern-6 {
+  top: 316px;
+  left: 565px;
+}
+
+.pattern-7 {
+  top: 440px;
+  left: 66px;
+}
+
+.pattern-8 {
+  top: 440px;
+  left: 191px;
+}
+
+.pattern-9 {
+  top: 440px;
+  left: 565px;
+}
+
+.pattern-10 {
+  top: 565px;
+  left: 191px;
+}
+
+.pattern-11 {
+  top: 565px;
+  left: 315px;
+}
+
+.pattern-12 {
+  top: 565px;
+  left: 565px;
+}
+
+.pattern-13 {
+  top: 690px;
+  left: 190px;
+}
+
+.pattern-14 {
+  top: 690px;
+  left: 315px;
+}
+
+.pattern-15 {
+  top: 815px;
+  left: 191px;
+}
+
+.pattern-16 {
+  top: 815px;
+  left: 253px;
+}
+
+img {
+  inline-size: 250px;
+  position: absolute;
+  top: 315px;
+  left: 315px;
+  z-index: -1;
+  aspect-ratio: 1;
+  object-fit:cover;
+  border-radius: 50% 0 50% 50%;
+}
+
