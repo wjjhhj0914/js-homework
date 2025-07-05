@@ -6,11 +6,13 @@
 
 - `week01` : 변수, 상수 작성 과제 & 함수 작성 과제
 - `week03` : 캐러셀(Carousel) 컴포넌트 구현 과제
+- `week04` : 애니메이션 구현 과제
 
 ## 🔗 주차별 바로가기
 
 - [Week 01 과제 바로가기](./week01/README.md)
 - [Week 03 과제 바로가기](./week03/README.md)
+- [Week 04 과제 바로가기](./week04/README.md)
 
 ---
 
