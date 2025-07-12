@@ -8,21 +8,46 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/week05/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/week05/assets/favicon/site.webmanifest">
   <title>Pastimer | 10분의 기다림을 즐겁게</title>
+  <script defer src="/week05/src/script.js"></script>
+  <link rel="stylesheet" href="/week05/src/styles/style.css" />
 </head>
 <body>
-  <main class="home">
-    <h1 class="home__title">🍝 Pastimer</h1>
-    <p class="home__description">
-      <span>파스타 면을 삶는 동안</span>
-      <span>지루하지 않게 기다려볼까요?</span>
-    </p>
-    <section class="home__options">
-      <div class="time__options">
-        <button class="time__options-button" type="button" data-time="8">8분</button>
-        <button class="time__options-button" type="button" data-time="10">10분</button>
-        <button class="time__options-button" type="button" data-time="12">12분</button>
+  <main class="app">
+    <section class="screen screen__home" aria-label="홈 화면">
+      <h1 class="home__title">🍝 Pastimer</h1>
+      <p class="home__description">
+        <span>파스타 면을 삶는 동안</span>
+        <span>지루하지 않게 기다려볼까요?</span>
+      </p>
+      <section class="home__options">
+        <div class="time__options">
+          <button class="time__options-button" type="button" data-time="8">8분</button>
+          <button class="time__options-button" type="button" data-time="10">10분</button>
+          <button class="time__options-button" type="button" data-time="12">12분</button>
+        </div>
+        <button class="start__button" type="button" disabled>타이머 시작</button>
+      </section>
+    </section>
+
+    <section class="screen screen__timer is-hidden" aria-label="타이머 화면">
+      <div class="timer__wrapper">
+        <p class="timer__label">⏰ 남은 시간</p>
+        <p class="timer__time" aria-live="polite">10:00</p>
       </div>
-      <button class="start__button" type="button" disabled>타이머 시작</button>
+      <section class="quiz">
+        <h2 class="quiz__question">아일랜드의 수도는?</h2>
+        <div class="quiz__options">
+          <button type="button" class="quiz__option">에든버러</button>
+          <button type="button" class="quiz__option">레이캬비크</button>
+          <button type="button" class="quiz__option">런던</button>
+          <button type="button" class="quiz__option">더블린</button>
+        </div>
+        <p class="quiz__feedback" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section class="screen screen__done is-hidden" aria-label="종료 화면">
+
     </section>
   </main>
 </body>
