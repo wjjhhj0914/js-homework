@@ -305,7 +305,7 @@ const quizData = [
   },
   {
     question: '다음 중 영국 출신 밴드는?',
-    options: ['Imagin Dragons', 'Maronn 5', 'Coldplay', 'OneRepublic'],
+    options: ['Imagin Dragons', 'Maroon 5', 'Coldplay', 'OneRepublic'],
     correctAnswer: 'Coldplay'
   },
   {
