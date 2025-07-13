@@ -168,6 +168,23 @@ button:disabled {
   background-color: #cde7ff;
 }
 
+.quiz__option.correct {
+  background-color: #2b92ff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.quiz__option.incorrect {
+  background-color: crimson;
+  color: #fff;
+  font-weight: 600;
+}
+
+.quiz__option.correct:hover,
+.quiz__option.incorrect:hover {
+  cursor: default;
+}
+
 .quiz__feedback {
   font-size: 0.95rem;
   color: #555;

@@ -389,15 +389,27 @@
       quizOptions.appendChild(button);
 
       button.addEventListener('click', () => {
+        const allOptions = quizOptions.querySelectorAll('.quiz__option');
+        allOptions.forEach(button => button.disabled = true);
+
         if (option === quiz.correctAnswer) {
+          button.classList.add('correct');
           quizFeedback.textContent = '정답입니다! 🎉';
         } else {
+          button.classList.add('incorrect');
           quizFeedback.textContent = `오답입니다...😔 정답은 ${quiz.correctAnswer}입니다.`;
         }
 
+        // 정답 버튼에 파란색 표시
+        allOptions.forEach(button => {
+          if (button.textContent === quiz.correctAnswer) {
+            button.classList.add('correct');
+          }
+        })
+
         setTimeout(() => {
           showRandomQuiz();
-        }, 2000);
+        }, 3000);
       })
     });
 
