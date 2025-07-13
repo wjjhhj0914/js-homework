@@ -185,14 +185,6 @@ restartButton.addEventListener('click', () => {
 
 ---
 
-## 📄 문서 정리 (Notion)
-
-Notion 문서에서 확인하실 수 있습니다.
-
-👉 [Pastimer 기획 & 구현 노션 문서]()
-
----
-
 ## 💬 회고
 
 이번 과제는 자율 주제를 선정했기 때문에 정말 0부터 시작해야 했다.  
